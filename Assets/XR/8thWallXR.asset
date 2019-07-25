@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 682965911, guid: f7fff1a98506b0033937160dbbe857ba, type: 3}
+  m_Name: 8thWallXR
+  m_EditorClassIdentifier: 
+  allChannels:
+  - release
+  channel: release
+  installedChannel: 
+  version: 
+  autoUpdate: 1
+  autoUpdateSec: 3600
+  updateTimeoutSec: 25
+  downloadTimeoutSec: 600
+  updateAvailable: 0
+  releaseNotes:
+  - id: 10
+    notes: "## Release 10.0\n\nRelease 10 adds a revamped web developer console with
+      streamlined developer-mode, access to allowed origins and QR codes. It adds
+      8th Wall Web support for XRExtras, an open-source package for error handling,
+      loading visualizations, \"almost there\" flows, and more.\n\n### 8th Wall Web\nNew
+      Features:\n* Revamped web developer console.\n* XR Extras provides a convenient
+      solution for:\n  * Load screens and requesting camera permissions.\n  * Redirecting
+      users from unsupported devices or browsers (\"almost there\").\n  * Runtime
+      error handling.\n  * Drawing a full screen camera feed in low-level frameworks
+      like threejs.\n* Added public lighting, hit test interfaces to XrController.\n*
+      Other minor API additions.\n\nFixes and Enhancements:\n* Improved app startup
+      speed.\n* Fixed a framework issue where errors were not propagated on startup.\n*
+      Fixed an issue that could occur with WebGL during initialization.\n* Use window.screen
+      interface for device orientation if available.\n* Fixed a threejs issue that
+      could occur when the canvas is resized.\n\n### 8th Wall XR for Unity\nFixes
+      and Enhancements:\n* Better support for Android camera permissions in Unity
+      2018.3."
+  - id: 9.3
+    notes: '## Release 9.3
+
+
+      ### 8th Wall Web
+
+      New Features:
+
+      * Minor API additions.
+
+
+      ### 8th Wall XR for Unity
+
+      Fixes:
+
+      - Fixed an issue when lifecycle methods were called out of order.
+
+'
+  - id: 9.2
+    notes: '## Release 9.2
+
+
+      ### 8th Wall Web
+
+      New Features:
+
+      * New documentation released: https://docs.8thwall.com/web
+
+
+      ### 8th Wall XR for Unity
+
+      Fixes
+
+      * Fixed issue on iOS devices without autofocus support.'
+  - id: 9.1
+    notes: '## Release 9.1
+
+
+      New Features:
+
+      * Added support for Amazon Sumerian in 8th Wall Web
+
+      * Added ARCore Availability API
+
+      * Improved tracking stability and eliminated jitter
+
+
+      Fixes:
+
+      * Fixed issue with ProGuard obfuscation rules that could cause package conflicts'
+  - id: 9
+    notes: "## Release 9\n\n* New Features:\n  * All-new GPU-based pipeline delivers
+      up to 4x faster tracking performance with improved tracking stability.\n  *
+      High-resolution camera texture support (1080p).\n  * Custom ARSessionDelegate
+      feature allows ARKit-enabled devices to use the latest ARKit features.\n  *
+      Building against XCode 10 with support for iPhone XR, XS, and XS Max.\n  * ARKit
+      2.0 support.\n  * ARCore 1.5 support.\n  * Added support for ARCore camera auto-focus.\n
+      \ * Added Pause(), Resume() and IsPaused() functions to the XRController API.\n\n\n*
+      Fixes:\n  * Fixed a landscape-mode rendering issue on iPhone 5c."
+  - id: 8.1
+    notes: '## Release 8.1
+
+
+      Fixes:
+
+      * Fixed connection issues with XR Remote on Windows'
+  - id: 8
+    notes: "## Release 8\n\n* New features:\n  * Support for ARCore 1.3 with Vertical
+      Surfaces and Image Targets.\n  * Support for XR Remote in non-AR scenes.\n  *
+      Added ability to use 8th Wall SLAM on ARKit & ARCore devices.\n  * Added ability
+      to set initial camera facing direction.\n  * Added ability to increase camera
+      field of view in non-overlay scenes.\n\n\n* Enhancements and Fixes:\n  * Improved
+      8th Wall SLAM accuracy with enhanced bundle adjustment and point triangulation.\n
+      \ * Fixed Surface Controller mesh orientation for deformable meshes.\n  * Improved
+      behavior of all XRSurfaceController option combinations.\n  * Miscellaneous
+      bug fixes and improvements."
+  - id: 7.1
+    notes: "## Release 7.1\n\n* Fixes:\n  * Fix issue where detected instant surface
+      could detach from actual surface\n  * Fix XRSurfaceController issue where game
+      objects weren't rotated properly on vertical surfaces\n  * Fix camera rendering
+      issue on certain Android devices running API 21 and below\n  * Fix camera artifacts
+      on 720p iPads\n  * Fix issue where surface meshes are allocated but not destroyed
+      \ \n  * Fixed crash when attempting Image Detection on iOS devices running 11.2.x
+      or below"
+  - id: 7
+    notes: "## Release 7\n\n* New Features:\n  * Image detection API, supporting iOS
+      11.3+ devices with ARKit.\n  * Vertical surface detection, supporting iOS 11.3+
+      devices with ARKit.\n  * Camera Autofocus toggle on Android + iOS.\n  * World
+      point detection on all devices.\n  * Hit test API supported on all devices.\n
+      \ * Ambient color estimation and display for iOS ARKit.\n* Enhancements and
+      Fixes:\n  * 3x rendering performance speedup for iOS ARKit.\n  * 1080p high
+      resolution camera feed for iOS ARKit.\n  * Improved performance and stability
+      for instant surface tracking.\n  * Miscellaneous bug fixes and improvements."
+  - id: 6.3
+    notes: "## Release 6.3\n\n* Fixes:\n  * Fixed a few crashes on iOS."
